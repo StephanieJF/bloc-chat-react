@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './RoomList.css';
 
 class RoomList extends Component {
 	constructor(props) {
@@ -19,10 +20,10 @@ class RoomList extends Component {
 
 	render() {
 		return (
-			this.state.rooms.map( (room) =>
-				<ul>
-					<li>{room.name}</li>
-				</ul>
+				this.state.rooms.map( (room) =>
+					<ul className="Room-list">
+						<li>{room.name}</li>
+					</ul>
 		)
 		);
 	}

@@ -18,9 +18,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-        </header>
 				<div className="Available-rooms">
+				<header className="App-header">
+					<h1>Bloc Chat</h1>
+				</header>
 					<RoomList
 						firebase = {firebase}
 					/>

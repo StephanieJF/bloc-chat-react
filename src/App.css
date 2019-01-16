@@ -1,3 +1,17 @@
 .App {
   text-align: center;
 }
+
+.Available-rooms {
+	height: 100%;
+	width: 25%;
+	position: fixed;
+	background-color: grey;
+	top: 0;
+	left: 0;
+}
+
+.App-header {
+	text-align: left;
+	padding-left: 40px;
+}
