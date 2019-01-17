@@ -45,6 +45,7 @@ class RoomList extends Component {
 					<form onSubmit={ (e) => this.createRoom(e) }>
 						<input
 							type="text"
+							placeholder="Enter Room Name"
 							value={this.state.newRoomName}
 							onChange={ (e) => this.handleChange(e) }
 						/>
