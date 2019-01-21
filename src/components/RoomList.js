@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './RoomList.css';
 
+
 class RoomList extends Component {
 	constructor(props) {
 		super(props);
@@ -35,11 +36,16 @@ class RoomList extends Component {
 	render() {
 		return (
 			<section className="RoomList">
-				{this.state.rooms.map( (room) =>
-					<ul className="Room-list">
-						<li>{room.name}</li>
-					</ul>
-				)}
+				<ul className="Room-list">
+					{this.state.rooms.map( (room, index) =>
+						<li
+						key={index}
+						onClick={() => this.props.setActiveRoom(room)}
+						>
+							{room.name}
+						</li>
+					)}
+				</ul>
 				<div className="Room-form">
 					<h1>Create New Room</h1>
 					<form onSubmit={ (e) => this.createRoom(e) }>
@@ -56,5 +62,4 @@ class RoomList extends Component {
 		);
 	}
 }
-
 export default RoomList;

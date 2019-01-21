@@ -1,5 +1,10 @@
-ul {
-	text-align: left;
+.Room-list {
+	text-align: center;
 	list-style-type: none;
 	text-transform: capitalize;
+	padding-left: 0px;
+}
+
+li {
+	margin-bottom: 5px;
 }

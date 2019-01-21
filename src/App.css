@@ -12,6 +12,14 @@
 }
 
 .App-header {
-	text-align: left;
-	padding-left: 40px;
+	text-align: center;
+}
+
+.Message-list {
+	margin-left: 26%;
+}
+
+.Message-list h1 {
+	text-transform: capitalize;
+	text-align: center;
 }

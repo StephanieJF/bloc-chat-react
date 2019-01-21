@@ -1,0 +1,22 @@
+.Chat-preview {
+	display: table;
+	width: 95%;
+	margin-top: 10px;
+}
+
+span {
+	display: table-cell;
+}
+
+.from {
+	text-align: left;
+	font-weight: bold;
+}
+
+.time {
+	text-align: right;
+}
+
+.content {
+	text-align: left;
+}
