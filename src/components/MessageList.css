@@ -1,7 +1,18 @@
+div.Message:nth-child(odd) {
+	background: #8080802e;
+}
+
+.Message {
+	vertical-align: middle;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .Chat-preview {
 	display: table;
 	width: 95%;
-	margin-top: 10px;
 }
 
 span {
@@ -15,8 +26,12 @@ span {
 
 .time {
 	text-align: right;
+	font-size: 15px;
+	font-style: italic;
 }
 
 .content {
 	text-align: left;
+	padding-top: 3px;
+	font-size: 15px;
 }

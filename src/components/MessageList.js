@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './MessageList.css';
+import formatDate from './../modules/formatDate'
 
 class MessageList extends Component {
 	constructor(props) {
@@ -18,7 +19,6 @@ class MessageList extends Component {
 		});
 	}
 
-
 	render() {
 		return (
 			<div>
@@ -26,7 +26,7 @@ class MessageList extends Component {
 					<div className="Message" key={index}>
 						<div className="Chat-preview">
 							<span className="from">{message.userName}</span>
-							<span className="time">{message.sentAt}</span>
+							<span className="time">{formatDate(message.sentAt)}</span>
 						</div>
 						<div className="content">{message.content}</div>
 					</div>
