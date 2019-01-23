@@ -1,6 +1,9 @@
+import React, { Component } from 'react';
+
 function formatDate(number) {
 	const a = new Date(number);
 	const today = new Date();
+	const yesterday = new Date(Date.now() - 86400000);
 	const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 	const year = a.getFullYear();
 	const month = months[a.getMonth()];
@@ -15,7 +18,7 @@ function formatDate(number) {
 	if (a.setHours(0,0,0,0) == today.setHours(0,0,0,0))
 		return 'today, ' + hours + ':' + min + suffix;
 	else
-		return date + ' ' + month + ' ' + year + ', ' + hours + ':' + min + suffix;
+	return date + ' ' + month + ' ' + year + ', ' + hours + ':' + min + suffix;
  }
 
 	export default formatDate;
