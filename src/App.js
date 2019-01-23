@@ -3,6 +3,7 @@ import './App.css';
 import * as firebase from 'firebase';
 import RoomList from './components/RoomList'
 import MessageList from './components/MessageList'
+import User from './components/User'
 
 var config = {
     apiKey: "AIzaSyCIPDJWHI-5TS2_gmkFcx9En28zvK2vaDk",
@@ -34,6 +35,9 @@ class App extends Component {
 					<h1>Bloc Chat</h1>
 				</header>
 				<div>
+					<User
+						firebase = {firebase}
+						/>
 					<RoomList
 						firebase = {firebase}
 						activeRoom = { this.state.activeRoom }
