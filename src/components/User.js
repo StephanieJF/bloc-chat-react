@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-
 class User extends Component {
 
-	handleSignIn(){
+	handleSignIn(e){
+		e.preventDefault();
 		const provider = new this.props.firebase.auth.GoogleAuthProvider();
-		this.props.firebase.auth().signInWithPopup( provider );
-	}
+		this.props.firebase.auth().signInWithPopup(provider);
+  }
 
 	handleSignOut(){
 		this.props.firebase.auth().signOut();
@@ -26,7 +26,7 @@ class User extends Component {
 				{this.props.user?
 					<button onClick={() => this.handleSignOut()}>Sign Out</button>
 				:
-					<button onClick={() => this.handleSignIn()}>Sign In</button>
+					<button onClick={(e) => this.handleSignIn(e)}>Sign In</button>
 				}
 			</div>
 		);
