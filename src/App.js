@@ -13,7 +13,8 @@ var config = {
     storageBucket: "bloc-chat-cf8c4.appspot.com",
     messagingSenderId: "323939692272"
   };
-  firebase.initializeApp(config);
+
+firebase.initializeApp(config);
 
 class App extends Component {
 	constructor(props) {
