@@ -15,7 +15,7 @@ var config = {
   };
 
 	firebase.initializeApp(config);
-	
+
 
 class App extends Component {
 	constructor(props) {
@@ -55,11 +55,15 @@ class App extends Component {
 					</div>
 				</section>
 				<div className="Message-list">
-					<h1>{this.state.activeRoom ? this.state.activeRoom.name : 'Select a Room'}</h1>
-					<MessageList
-						firebase = {firebase}
-						activeRoom = {this.state.activeRoom}
-					/>
+					{this.state.activeRoom ? (
+						<MessageList
+							firebase = {firebase}
+							activeRoom = {this.state.activeRoom}
+							user = {this.state.user}
+						/>
+					) : (
+						<h1>Select a Room</h1>
+					)}
 				</div>
       </div>
     );

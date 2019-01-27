@@ -13,7 +13,7 @@ function formatDate(number) {
 	const min = (m < 10)? ('0' + m) : m;
 
 	if (a.setHours(0,0,0,0) == today.setHours(0,0,0,0))
-		return 'today, ' + hours + ':' + min + suffix;
+		return 'Today, ' + hours + ':' + min + suffix;
 	else
 		return month + ' ' + date + ' ' + year + ', ' + hours + ':' + min + suffix;
  }

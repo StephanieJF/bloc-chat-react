@@ -4,8 +4,7 @@ div.Message:nth-child(odd) {
 
 .Message {
 	vertical-align: middle;
-	margin-top:5px;
-	margin-bottom:5px;
+	margin: 5px 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
@@ -34,4 +33,10 @@ span {
 	text-align: left;
 	padding-top: 3px;
 	font-size: 15px;
+}
+
+textarea {
+	width: 95%;
+	height: 30px;
+	margin-top: 20px;
 }
